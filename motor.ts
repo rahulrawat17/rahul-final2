@@ -1,5 +1,5 @@
 /**
-* MCP23017-control blocks
+* motor functions by Stemrobo co. ltd.
 */
 
 // initial values of outputABuffer and outputBBuffer
@@ -12,7 +12,7 @@ enum Ldr {
     Right = 1
 }
 
-// custom enum for readLine function
+// select th IRSensor on the left or right
 enum IRSensor {
     //% block="left"
     Left,
@@ -20,7 +20,7 @@ enum IRSensor {
     Right
 }
 
-// custom enum for ping function
+// select the ping unit
 enum PingUnit {
     //% block="μs"
     MicroSeconds,
@@ -36,7 +36,7 @@ enum Mode {
     Output = 1,
 }
 
-// pins
+// select the pin on Sv5 or Sv6
 enum Pin {
     //% block=Sv5
     Sv5 = 0,
