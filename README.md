@@ -1,31 +1,58 @@
+## Stemrobo-motor Extension for Microsoft PXT
 
-> Open this page at [https://rahulrawat17.github.io/rahul-final2/](https://rahulrawat17.github.io/rahul-final2/)
+This library provides a Microsoft PXT package for Blink, see https://rahulrawat17.github.io/rahul-final2/.
 
-## Use as Extension
+### Start Motor 
+To start the motor
+```blocks
+stemrobo.setup()
+```
 
-This repository can be added as an **extension** in MakeCode.
+### Set the pin
+description of function
+```blocks
+stemrobo.setPinMode(Mode.Input)
+```
 
-* open [https://makecode.microbit.org/](https://makecode.microbit.org/)
-* click on **New Project**
-* click on **Extensions** under the gearwheel menu
-* search for **https://github.com/rahulrawat17/rahul-final2** and import
+### IR Sensor
+description of function
+```blocks
+stemrobo.readLine(IRSensor.Left)
+```
 
-## Edit this project ![Build status badge](https://github.com/rahulrawat17/rahul-final2/workflows/MakeCode/badge.svg)
+### Read Sonar
+description of function
+```blocks
+stemrobo.ping(PingUnit.MicroSeconds)
+```
 
-To edit this repository in MakeCode.
+### Move the motor
+description of function
+```blocks
+stemrobo.moveIt(MOVE.Forward)
+```
 
-* open [https://makecode.microbit.org/](https://makecode.microbit.org/)
-* click on **Import** then click on **Import URL**
-* paste **https://github.com/rahulrawat17/rahul-final2** and click import
+### Digital Read
+description of function
+```blocks
+stemrobo.digitalRead(Pin.Sv5)
+```
 
-## Blocks preview
+### Light Sensor
+description of function
+```blocks
+stemrobo.lightSensor()
+```
 
-This image shows the blocks code from the last commit in master.
-This image may take a few minutes to refresh.
+### Digital Write
+description of function
+```blocks
+stemrobo.digitalWrite(Pin.Sv5, 0)
+```
 
-![A rendered view of the blocks](https://github.com/rahulrawat17/rahul-final2/raw/master/.github/makecode/blocks.png)
-
-#### Metadata (used for search, rendering)
+## Supported targets
 
 * for PXT/microbit
-<script src="https://makecode.com/gh-pages-embed.js"></script><script>makeCodeRender("{{ site.makecode.home_url }}", "{{ site.github.owner_name }}/{{ site.github.repository_name }}");</script>
+
+## License
+MIT
