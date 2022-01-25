@@ -31,5 +31,4 @@
   // Digital write
   stemrobo.digitalWrite(Pin.Sv5, 1)
   stemrobo.digitalWrite(Pin.Sv6, 0)
-
 }
