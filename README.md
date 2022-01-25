@@ -29,7 +29,6 @@ basic.forever(function () {
 ## Read sonar value
 
 You have mounted the sonar sensor for the Bot you can also use the read sonar in unit µs (..) function to read the distance to obstacles.
-
 ```blocks
 stemrobo.setup()
 basic.forever(function () {
@@ -40,7 +39,6 @@ basic.forever(function () {
 ## Read light sensor
 
 Light sensors can be read using light sensor left(..) and light sensor right(..) function.
-
 ```blocks
 stemrobo.setup()
 basic.forever(function () {
@@ -54,7 +52,6 @@ basic.forever(function () {
 ## Read line sensor
 
 The Bot has two line-sensors: left and right. To read the value of the sensors, use left line sensor (..)and right line sensor (..) function.
-
 ```blocks
 stemrobo.setup()
 basic.forever(function () {
@@ -68,7 +65,6 @@ basic.forever(function () {
 
 Use bots digital read block for read digital signal from pin no Sv5 and Sv6.
 > Select PinMode as Input for reading the digital sensor.
-
 ```blocks
 stemrobo.setup()
 basic.forever(function () {
@@ -81,7 +77,6 @@ basic.forever(function () {
 
 Use bots digital write block for on/off any output module from pin no Sv5 and Sv6.
 > Select PinMode as Output for writing the output digital signal.
-
 ```blocks
 stemrobo.setup()
 basic.forever(function () {
