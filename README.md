@@ -2,9 +2,9 @@
 
 This library provides a Microsoft PXT package for Blink, see https://rahulrawat17.github.io/rahul-final2/.
 
-## Start the Motor/ Drive the robot
+## Driving the robot
 
-The simplest way to drive the robot is by using the "start motor" blocks. With each of these blocks you specify "move FORWARD" or "move BACKWARD".
+The simplest way to drive the robot is by using the start motor (..) blocks. With each of these blocks you specify move FORWARD(..) and move BACKWARD(..).
 ```blocks
 stemrobo.setup()
 basic.forever(function () {
