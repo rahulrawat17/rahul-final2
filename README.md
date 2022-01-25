@@ -2,7 +2,7 @@
 
 This library provides a Microsoft PXT package for Blink, see https://rahulrawat17.github.io/rahul-final2/.
 
-## Driving the robot
+## Move/Drive the robot
 
 The simplest way to drive the robot is by using the start motor (..) blocks. With each of these blocks you specify move FORWARD(..) and move BACKWARD(..).
 ```blocks
