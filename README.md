@@ -4,7 +4,7 @@ This library provides a Microsoft PXT package for Blink, see https://rahulrawat1
 
 ## Move/Drive the robot
 
-The simplest way to drive the robot is by using the start motor (..) blocks. With each of these blocks you can specify move FORWARD(..) or move BACKWARD(..).
+The simplest way to drive the robot is by using the moveIt(...) blocks. With each of these blocks you can specify FORWARD or BACKWARD.
 ```blocks
 stemrobo.setup()
 basic.forever(function () {
@@ -15,7 +15,7 @@ basic.forever(function () {
 })
 ```
 
-You can also spin/rotate the robot with the move LEFT(..) or move RIGHT(..) blocks.
+You can also spin/rotate the robot with the moveIt(MOVE.Left) or moveIt(MOVE.Right) function.
 ```blocks
 stemrobo.setup()
 basic.forever(function () {
@@ -28,7 +28,7 @@ basic.forever(function () {
 
 ## Read sonar value
 
-You have mounted the sonar sensor for the Bot you can also use the read sonar in unit µs (..) function to read the distance to obstacles.
+You have mounted the sonar sensor for the Bot, you can also use the ping(...) function to read the distance to obstacles.
 ```blocks
 stemrobo.setup()
 basic.forever(function () {
@@ -38,7 +38,7 @@ basic.forever(function () {
 
 ## Read light sensor
 
-Light sensors can be read using light sensor left(..) and light sensor right(..) function.
+Light sensors can be read using the lightSensor(...) function. With this block you can specify LEFT or RIGHT.
 ```blocks
 stemrobo.setup()
 basic.forever(function () {
@@ -51,7 +51,7 @@ basic.forever(function () {
 
 ## Read line sensor
 
-The Bot has two line-sensors: left and right. To read the value of the sensors, use left line sensor (..)and right line sensor (..) function.
+The Bot has two line-sensors: left and right. To read the value of the sensors, use readLine(...). With this block you can specify LEFT or RIGHT.
 ```blocks
 stemrobo.setup()
 basic.forever(function () {
