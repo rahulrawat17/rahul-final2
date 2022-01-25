@@ -5,7 +5,6 @@ This library provides a Microsoft PXT package for Blink, see https://rahulrawat1
 ## Start the Motor/ Drive the robot
 
 The simplest way to drive the robot is by using the "start motor" blocks. With each of these blocks you specify "move FORWARD" or "move BACKWARD".
-
 ```blocks
 stemrobo.setup()
 basic.forever(function () {
@@ -17,7 +16,6 @@ basic.forever(function () {
 ```
 
 You can also spin/rotate the robot with the move LEFT(..) or move RIGHT(..) blocks.
-
 ```blocks
 stemrobo.setup()
 basic.forever(function () {
