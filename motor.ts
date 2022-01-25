@@ -232,10 +232,10 @@ namespace stemrobo {
         }
     }
     //% block="light sensor $Ldr"
-    export function lightSensor(ldr: Ldr): number {
+    export function lightSensor(Ldr: Ldr): number {
         pins.i2cWriteNumber(32, 19, NumberFormat.Int8BE)
         let ldrRead = pins.i2cReadNumber(32, NumberFormat.Int8LE);
-        if (ldr == 0) {
+        if (Ldr == 0) {
             if ((ldrRead == 4 || ldrRead == 42) || (ldrRead == -124)) {
                 return 1;
             }
@@ -246,7 +246,7 @@ namespace stemrobo {
                 return 0;
             }
         }
-        else if (ldr == 1) {
+        else if (Ldr == 1) {
             if ((ldrRead == 8 || ldrRead == 82) || (ldrRead == -128)) {
                 return 1;
             }
