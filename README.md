@@ -4,7 +4,7 @@ This library provides a Microsoft PXT package for Blink, see https://rahulrawat1
 
 ## Move/Drive the robot
 
-The simplest way to drive the robot is by using the moveIt(...) blocks. With each of these blocks you can specify FORWARD or BACKWARD.
+The simplest way to drive the bot is by using the moveIt(...) blocks. With each of these blocks you can specify FORWARD or BACKWARD.
 ```blocks
 stembot.setup()
 basic.forever(function () {
@@ -15,7 +15,7 @@ basic.forever(function () {
 })
 ```
 
-You can also spin/rotate the robot with the moveIt(SBMOVE.Left) or moveIt(SBMOVE.Right) function.
+You can also spin/rotate the bot with the moveIt(SBMOVE.Left) or moveIt(SBMOVE.Right) function.
 ```blocks
 stembot.setup()
 basic.forever(function () {
