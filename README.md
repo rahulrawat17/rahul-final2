@@ -8,20 +8,20 @@ The simplest way to drive the robot is by using the moveIt(...) blocks. With eac
 ```blocks
 stembot.setup()
 basic.forever(function () {
-    stemrobo.moveIt(SBMOVE.Forward)
+    stembot.moveIt(SBMOVE.Forward)
     basic.pause(100)
-    stemrobo.moveIt(SBMOVE.Backward)
+    stembot.moveIt(SBMOVE.Backward)
     basic.pause(100)
 })
 ```
 
 You can also spin/rotate the robot with the moveIt(SBMOVE.Left) or moveIt(SBMOVE.Right) function.
 ```blocks
-stemrobo.setup()
+stembot.setup()
 basic.forever(function () {
-    stemrobo.moveIt(SBMOVE.Left)
+    stembot.moveIt(SBMOVE.Left)
     basic.pause(100)
-    stemrobo.moveIt(SBMOVE.Right)
+    stembot.moveIt(SBMOVE.Right)
     basic.pause(100)
 })
 ```
@@ -30,9 +30,9 @@ basic.forever(function () {
 
 You have mounted the sonar sensor for the Bot, you can also use the ping(...) function to read the distance to obstacles.
 ```blocks
-stemrobo.setup()
+stembot.setup()
 basic.forever(function () {
-    basic.showString("" + (stemrobo.ping(SBPingUnit.MicroSeconds)))
+    basic.showString("" + (stembot.ping(SBPingUnit.MicroSeconds)))
 })
 ```
 
@@ -40,11 +40,11 @@ basic.forever(function () {
 
 Light sensors can be read using the lightSensor(...) function. With this block you can specify LEFT or RIGHT.
 ```blocks
-stemrobo.setup()
+stembot.setup()
 basic.forever(function () {
-    basic.showString("" + (stemrobo.lightSensor(SBLdr.Left)))
+    basic.showString("" + (stembot.lightSensor(SBLdr.Left)))
     basic.pause(100)
-    basic.showString("" + (stemrobo.lightSensor(SBLdr.Right)))
+    basic.showString("" + (stembot.lightSensor(SBLdr.Right)))
     basic.pause(100)
 })
 ```
@@ -53,10 +53,10 @@ basic.forever(function () {
 
 The Bot has two line-sensors: left and right. To read the value of the sensors, use readLine(...). With this block you can specify LEFT or RIGHT.
 ```blocks
-stemrobo.setup()
+stembot.setup()
 basic.forever(function () {
-    basic.showString("" + (stemrobo.readLine(SBIRSensor.Left)))
-    basic.showString("" + (stemrobo.readLine(SBIRSensor.Left)))
+    basic.showString("" + (stembot.readLine(SBIRSensor.Left)))
+    basic.showString("" + (stembot.readLine(SBIRSensor.Left)))
 })
 
 ```
@@ -66,10 +66,10 @@ basic.forever(function () {
 Use bots digital read block for read digital signal from pin no Sv5 and Sv6.
 > Select PinMode as Input for reading the digital sensor.
 ```blocks
-stemrobo.setup()
+stembot.setup()
 basic.forever(function () {
-    basic.showString("" + (stemrobo.digitalRead(SBPin.Sv5)))
-    basic.showString("" + (stemrobo.digitalRead(SBPin.Sv6)))
+    basic.showString("" + (stembot.digitalRead(SBPin.Sv5)))
+    basic.showString("" + (stembot.digitalRead(SBPin.Sv6)))
 })
 ```
 
@@ -78,10 +78,10 @@ basic.forever(function () {
 Use bots digital write block for on/off any output module from pin no Sv5 and Sv6.
 > Select PinMode as Output for writing the output digital signal.
 ```blocks
-stemrobo.setup()
+stembot.setup()
 basic.forever(function () {
-    stemrobo.digitalWrite(SBPin.Sv5, 1)
-    stemrobo.digitalWrite(SBPin.Sv6, 0)
+    stembot.digitalWrite(SBPin.Sv5, 1)
+    stembot.digitalWrite(SBPin.Sv6, 0)
 })
 ```
 
