@@ -6,5 +6,5 @@ basic.forever(function () {
     basic.showString("" + (stembot.ping(SBPingUnit.MicroSeconds)))
     stembot.moveIt(SBMOVE.Forward)
     basic.showString("" + (stembot.digitalRead(SBPin.Sv5)))
-    stembot.digitalWrite(SBPin.Sv5, true)
+    stembot.digitalWrite(SBPin.Sv5, false)
 })

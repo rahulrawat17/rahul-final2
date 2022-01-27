@@ -8,7 +8,7 @@ enum SBLdr {
     Right = 1
 }
 
-// select the IRSensor on the left or right
+// select left IRSensor or right IRSensor
 enum SBIRSensor {
     //% block="left"
     Left,
