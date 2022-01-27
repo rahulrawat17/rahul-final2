@@ -1,34 +1,34 @@
 {
   // Move the motor forword/backward
-  stemrobo.moveIt(MOVE.Forward)
+    stembot.moveIt(SBMOVE.Forward)
   basic.pause(100)
-  stemrobo.moveIt(MOVE.Backward)
+    stembot.moveIt(SBMOVE.Backward)
   basic.pause(100)
 
   // Rotate the motor left/right
-  stemrobo.moveIt(MOVE.Left)
+    stembot.moveIt(SBMOVE.Left)
   basic.pause(100)
-  stemrobo.moveIt(MOVE.Right)
+    stembot.moveIt(SBMOVE.Right)
   basic.pause(100)
 
   // Read sonar value
-  basic.showString("" + (stemrobo.ping(PingUnit.MicroSeconds)))
+  basic.showString("" + (stembot.ping(SBPingUnit.MicroSeconds)))
 
   // Read light sensor
-  basic.showString("" + (stemrobo.lightSensor(Ldr.Left)))
+  basic.showString("" + (stembot.lightSensor(SBLdr.Left)))
   basic.pause(100)
-  basic.showString("" + (stemrobo.lightSensor(Ldr.Right)))
+  basic.showString("" + (stembot.lightSensor(SBLdr.Right)))
   basic.pause(100)
 
   // Read line sensor
-  basic.showString("" + (stemrobo.readLine(IRSensor.Left)))
-  basic.showString("" + (stemrobo.readLine(IRSensor.Left)))
+  basic.showString("" + (stembot.readLine(SBIRSensor.Left)))
+  basic.showString("" + (stembot.readLine(SBIRSensor.Left)))
 
   // Digital read
-  basic.showString("" + (stemrobo.digitalRead(Pin.Sv5)))
-  basic.showString("" + (stemrobo.digitalRead(Pin.Sv6)))
+  basic.showString("" + (stembot.digitalRead(SBPin.Sv5)))
+  basic.showString("" + (stembot.digitalRead(SBPin.Sv6)))
 
   // Digital write
-  stemrobo.digitalWrite(Pin.Sv5, 1)
-  stemrobo.digitalWrite(Pin.Sv6, 0)
+  stembot.digitalWrite(SBPin.Sv5, true)
+  stembot.digitalWrite(SBPin.Sv6, false)
 }
