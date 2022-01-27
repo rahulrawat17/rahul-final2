@@ -1,3 +1,8 @@
-basic.forever(function () {
-	
-})
+stembot.setup()
+stembot.setPinMode(SBMode.Input)
+basic.showString("" + (stembot.readLine(SBIRSensor.Left)))
+basic.showString("" + (stembot.lightSensor(SBLdr.Left)))
+basic.showString("" + (stembot.ping(SBPingUnit.MicroSeconds)))
+stembot.moveIt(SBMOVE.Forward)
+basic.showString("" + (stembot.digitalRead(SBPin.Sv5)))
+stembot.digitalWrite(SBPin.Sv5, false)
