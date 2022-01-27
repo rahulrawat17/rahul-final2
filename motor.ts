@@ -140,8 +140,8 @@ namespace stembot {
 
     // Block for Line Sensor
     /**
-      * set line sensor
-      * @param sensor set light sensor Left or Light
+      * detect the object
+      * @param sensor set sensor Left or Light
       */
     //% weight=80
     //% block="line sensor %sensor"
@@ -154,8 +154,8 @@ namespace stembot {
 
     // Block for Light Sensor
     /**
-      * set light sensor
-      * @param side set light sensor Left or Right
+      * detect the light
+      * @param side set sensor Left or Right
       */
     //% weight=70
     //% block="light sensor $side"
@@ -191,7 +191,7 @@ namespace stembot {
 
     // Block for Read Sonar Unit
     /**
-      * set unit of sonar
+      * detect the distance
       * @param unit set unit in μs, cm or inch
       */
     //% weight=60
