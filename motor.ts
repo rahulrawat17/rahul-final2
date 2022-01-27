@@ -124,7 +124,7 @@ namespace stembot {
         //setPortAsOutput(SBSetPort.A);
     }
 
-    // Block for Mode of Pin
+    // Block for setting the Mode of Pin
     /**
       * set mode of pin
       * @param mode mode of pin input or output
