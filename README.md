@@ -1,4 +1,4 @@
-# Stemrobo-motor Extension for Microsoft PXT
+# Stembot: Extension for Microsoft PXT
 
 This library provides a Microsoft PXT package for Blink, see https://rahulrawat17.github.io/rahul-final2/.
 
